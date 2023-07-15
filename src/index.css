@@ -1,0 +1,105 @@
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.App {
+  display: flex;
+  gap: 30px;
+  margin-top: 15vh;
+}
+.user-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem;
+  border-radius: 7px;
+  transition: 0.5s;
+}
+.users-container {
+  width: 30vw;
+}
+.user-container:hover {
+  background-color: #fff4e6;
+}
+.img-name {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.img-name h4,
+p {
+  margin: 4px 0;
+}
+.img-name img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.button {
+  background-color: #ffa94d;
+  color: #343a40;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 7px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button:hover {
+  background-color: #ff922b;
+}
+.add-button {
+  display: flex;
+  margin: 15px;
+  justify-content: flex-end;
+}
+.add-friend {
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px 0;
+}
+.bill-button {
+  display: flex;
+  margin: 25px 0;
+  justify-content: flex-end;
+}
+.input-container {
+  display: flex;
+  margin-top: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+.friend-container {
+  background-color: #fff4e6;
+  border-radius: 7px;
+  padding: 1rem 2.3rem;
+}
+input {
+  width: 40%;
+}
+select {
+  width: 43.4%;
+}
+input,
+select {
+  font-family: inherit;
+  color: inherit;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  text-align: center;
+  border: 1px solid #ffe8cc;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+.bill-split {
+  background-color: #fff4e6;
+  border-radius: 7px;
+  padding: 1rem 2.3rem;
+}
+.total-bill,
+.your-bill {
+  outline-color: orange;
+}
+select:valid {
+  outline-color: orange;
+}
