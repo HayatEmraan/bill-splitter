@@ -1,6 +1,6 @@
 import React from "react";
 
-const Users = ({ users }) => {
+const Users = ({ users, individualFriend, addFriend, hidden }) => {
   console.log(users);
   return (
     <div className="users-container">
@@ -15,13 +15,17 @@ const Users = ({ users }) => {
               </div>
             </div>
             <div>
-              <button className="button">Select</button>
+              <button onClick={() => individualFriend(user)} className="button">
+                Select
+              </button>
             </div>
           </div>
         );
       })}
       <div className="add-button">
-        <button className="button">Add Friend</button>
+        <button className={`button ${hidden ? "hidden" : ""}`} onClick={addFriend}>
+          Add Friend
+        </button>
       </div>
     </div>
   );

@@ -55,7 +55,7 @@ p {
 }
 .add-friend {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin: 15px 0;
 }
 .bill-button {
@@ -94,6 +94,7 @@ select {
 .bill-split {
   background-color: #fff4e6;
   border-radius: 7px;
+  height: fit-content;
   padding: 1rem 2.3rem;
 }
 .total-bill,
@@ -102,4 +103,8 @@ select {
 }
 select:valid {
   outline-color: orange;
+}
+
+.hidden{
+  display: none;
 }
